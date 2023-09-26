@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/502646584c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Constructions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Best Construction Company</p>
+            <h1>Inquire<span>RJO</span><br>Constructions</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>Welcome to RJO Construction, a distinguished leader in the construction industry, dedicated to transforming visions into reality through unparalleled craftsmanship and commitment to excellence.
+
+                    At RJO Construction, we take immense pride in our proven track record of delivering a diverse range of construction projects, from commercial spaces to residential complexes, always meeting and exceeding the expectations of our valued clients.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Excellence</p>
+                    <p class="tab-links" onclick="opentab('experience')">Client Satisfaction</p>
+                    <p class="tab-links" onclick="opentab('education')">Sustainable Practices</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Excellence</span><br>
+                            We strive for excellence in every project, delivering top-tier quality and precision in construction.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Client Satisfaction</span><br>
+                            We are dedicated to understanding and meeting our clients' unique needs, ensuring their complete satisfaction with our services.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sustainable Practices</span><br>
+                            We integrate sustainable and eco-friendly practices, minimizing our environmental footprint while maximizing efficiency and cost-effectiveness.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h2>Construct your Dream House</h2>
+                <p>Experience the future of living with integrated smart home technology. Control lighting, temperature, security, and entertainment systems with a simple touch or voice command, providing you with unparalleled convenience and peace of mind.</p>
+                <a href="#">Inquire Now!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-circle-exclamation"></i>
+                <h2>Renovation</h2>
+                <p>Our renovation services focus on maximizing the utility and aesthetics of your space. We reconfigure layouts, integrate smart storage solutions, and select the right materials and colors to enhance the ambiance and functionality of your home or office.</p>
+                <a href="#">Inquire Now!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-circle-check"></i>
+                <h2>Spacious Interiors</h2>
+                <p>Step into a realm of generous spaces and well-planned layouts. Every room is designed to offer ample natural light, providing a bright and airy atmosphere throughout the day. High ceilings and open floor plans create a sense of grandeur and freedom.</p>
+                <a href="#">Inquire Now!</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MyWork</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1.png">
+                <div class="layer">
+                    <h3>Architectural Marvel</h3>
+                    <p> Our dream house showcases an architectural design that seamlessly 
+                        combines modern aesthetics with timeless elegance. The perfect blend of clean lines, 
+                        large windows, and carefully curated landscaping gives this residence a distinctive and 
+                        captivating presence.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>Design Consultation:</h3>
+                    <p> We begin by understanding your unique vision and preferences. 
+                        Our expert designers work closely with you to create a customized plan that 
+                        optimizes your space, reflects your style, and meets your functional requirements.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>State-of-the-Art Amenities:</h3>
+                    <p> Your dream house comes fully equipped with state-of-the-art amenities 
+                        to enhance your lifestyle. From a chef's kitchen equipped with the latest 
+                        appliances to a private home theater for entertainment, every feature is 
+                        designed to make your daily living convenient and enjoyable.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rjo_construction@yahoo.com.ph</p>
+                <p><i class="fa-solid fa-square-phone"></i> 287329642</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/RJOconstruction2015"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>RJO Construction</i></p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }    
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1Cf1rFEsqcO-yVlaX-qoKLYtvh2YE360z9P10zqXp2AqdGnhN81xSmnDRQJb_EE4LlQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
